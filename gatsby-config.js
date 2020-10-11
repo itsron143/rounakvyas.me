@@ -85,7 +85,7 @@ module.exports = {
     },
     'gatsby-plugin-twitter',
     {
-      resolve: `gatsby-mdx`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: ['.md', '.mdx'],
         defaultLayouts: {
