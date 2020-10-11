@@ -67,22 +67,10 @@ const Layout = ({ children }) => {
         <meta property="og:title" content="Rounak Vyas" />
         <meta property="og:description" content="Personal Website" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://prestonrichey.com" />
-        <meta
-          property="og:image"
-          content="https://prestonrichey.com/social-meta.png"
-        />
-        <meta
-          property="og:image:secure_url"
-          content="https://prestonrichey.com/social-meta.png"
-        />
+        <meta property="og:url" content="https://rounakvyas.me" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Rounak Vyas" />
         <meta name="twitter:description" content="Personal Website" />
-        <meta
-          name="twitter:image"
-          content="https://prestonrichey.com/social-meta.png"
-        />
         <meta name="twitter:creator" content="@prestonrichey" />
       </Helmet>
 
