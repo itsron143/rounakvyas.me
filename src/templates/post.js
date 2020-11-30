@@ -5,16 +5,7 @@ import styled from 'styled-components';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 
 import Layout from './../components/Layout';
-// import TextPostBody from './../components/TextPostBody';
-// import ProjectLinks from './../components/ProjectLinks';
-
-// const StyledTitleWrap = styled.div`
-//   margin-bottom: 1em;
-// `;
-
-// const StyledTitle = styled.h1`
-//   margin-bottom: 0;
-// `;
+import { Disqus } from 'gatsby-plugin-disqus'
 
 const StyledPostDate = styled.time`
   color: #999;
@@ -26,6 +17,7 @@ const StyledPostDate = styled.time`
 `;
 
 const PostTemplate = ({ data }) => {
+
   const { frontmatter, body } = data.mdx;
 
   return (

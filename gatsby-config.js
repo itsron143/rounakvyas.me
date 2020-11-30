@@ -1,4 +1,10 @@
 module.exports = {
+  siteMetadata: {
+    title: 'Rounak Vyas',
+    description: 'Blogging about tech, travel and well, anything.',
+    author: '@itsron143',
+    siteUrl: 'https://rounakvyas.me',
+  },
   plugins: [
     {
       resolve: 'gatsby-plugin-styled-components'
@@ -9,10 +15,6 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          // {
-          //   resolve: 'gatsby-remark-component',
-          //   options: { components: ['zoom-image', 'hidden', 'countup'] }
-          // },
           {
             resolve: 'gatsby-remark-autolink-headers'
           },
@@ -22,18 +24,6 @@ module.exports = {
           {
             resolve: 'gatsby-remark-smartypants'
           },
-          // {
-          //   resolve: 'gatsby-remark-images',
-          //   options: {
-          //     // It's important to specify the maxWidth (in pixels) of
-          //     // the content container as this plugin uses this as the
-          //     // base for generating different widths of each image.
-          //     maxWidth: 1200,
-          //     // Remove the default behavior of adding a link to each
-          //     // image.
-          //     linkImagesToOriginal: false
-          //   }
-          // },
           {
             resolve: 'gatsby-remark-copy-linked-files',
             options: {
@@ -57,20 +47,6 @@ module.exports = {
         path: `${__dirname}/src/content/posts`
       }
     },
-    // {
-    //   resolve: 'gatsby-source-filesystem',
-    //   options: {
-    //     name: 'posts',
-    //     path: `${__dirname}/src/pages/blog`
-    //   }
-    // },
-    // {
-    //   resolve: 'gatsby-source-filesystem',
-    //   options: {
-    //     name: 'projects',
-    //     path: `${__dirname}/src/pages/projects`
-    //   }
-    // },
     {
       resolve: 'gatsby-plugin-nprogress',
       options: {
@@ -95,15 +71,62 @@ module.exports = {
           { resolve: 'gatsby-remark-autolink-headers' },
           { resolve: 'gatsby-remark-prismjs', options: {} },
           { resolve: 'gatsby-remark-smartypants' }
-          // {
-          //   resolve: 'gatsby-remark-copy-linked-files',
-          //   options: {
-          //     ignoreFileExtensions: []
-          //   }
-          // }
         ]
-        // mdPlugins: [require('gatsby-remark-prismjs')]
       }
-    }
+    },
+    {
+
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMdx } }) => {
+              return allMdx.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  data: edge.node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  custom_elements: [{ 'content:encoded': edge.node.html }],
+                });
+              });
+            },
+            query: `
+            {
+              allMdx(
+                limit: 1000,
+                sort: { order: DESC, fields: [frontmatter___date] }
+              ) {
+                edges {
+                  node {
+                    fields { slug }
+                    frontmatter {
+                      title
+                      date
+                    }
+                    html
+                  }
+                }
+              }
+            }
+            `,
+            output: '/rss.xml',
+            title: `Rounak Vyas's Blog RSS Feed`,
+            site_url: `https://rounakvyas.me`,
+          },
+        ],
+      },
+    },
   ]
 };

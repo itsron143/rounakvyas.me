@@ -71,7 +71,7 @@ const Layout = ({ children }) => {
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Rounak Vyas" />
         <meta name="twitter:description" content="Personal Website" />
-        <meta name="twitter:creator" content="@prestonrichey" />
+        <meta name="twitter:creator" content="@pitsron143" />
       </Helmet>
 
       <StyledHeader>
