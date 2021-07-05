@@ -1,0 +1,94 @@
+<link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+<style>
+
+  html, body {
+    height: 100%
+  }
+
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+
+  body {
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-family: 'Roboto Mono', monospace;
+    word-break: break-word;
+    margin: auto;
+    padding: 10px;
+    max-width: 720px;
+    text-align: left;
+  }
+
+  p {
+    line-height: 1.5em;
+    font-size: 1.6rem;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rubik', sans-serif;
+    margin: 0.5em 0;
+  }
+
+  iframe {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  blockquote {
+    margin-left: 1em;
+    margin-right: 1em;
+
+    @media (min-width: 520px) {
+      margin-left: 2em;
+      margin-right: 2em;
+    }
+}
+
+  figure {
+    margin: 0;
+  }
+
+  ul {
+    padding: 0;
+    list-style: square;
+  }
+
+  a {
+    text-decoration: none;
+    color: blue;
+    border-bottom: 2px solid transparent;
+  }
+
+
+  a[href^="/"], a[href^="/"] {
+        /* internal relative link */
+        color:black;
+  }
+  
+
+  a[href="{{ .URL }}"], a[href^="{{ .Name }}"] .active {
+    font-weight: bold;
+  }
+
+
+  a:hover {
+    color: blue;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  ul.blog-posts li a:visited {
+    color: darkgrey;
+  }
+
+</style>

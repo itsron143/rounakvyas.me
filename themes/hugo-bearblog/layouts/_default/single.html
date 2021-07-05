@@ -1,0 +1,25 @@
+{{ define "main" }}
+{{ if eq .Type "blog" }}{{ if not .Params.menu }}
+<h1>{{ .Title }}</h1>
+<p>
+  <i>
+    <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
+      {{ .Date.Format (default "2006-01-02" .Site.Params.dateFormat) }}
+    </time>
+  </i>
+</p>
+{{ end }}{{ end }}
+<content>
+  {{ .Content }}
+</content>
+<p>
+  {{ range (.GetTerms "tags") }}
+  <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+  {{ end }}
+</p>
+
+{{ if eq .Type "blog" }}{{ if not .Params.menu }}
+  {{ partial "disqus.html" . }}
+{{ end }}{{ end }}
+
+{{ end }}
