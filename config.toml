@@ -51,3 +51,8 @@ ignoreErrors = ["error-disable-taxonomy"]
   # for details. An example TOML config that uses [ISO
   # 8601](https://en.wikipedia.org/wiki/ISO_8601) format:
   # dateFormat = "2006-01-02"
+
+  [outputFormats]
+  [outputFormats.RSS]
+    mediatype = "application/rss"
+    baseName = "rss"
