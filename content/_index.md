@@ -6,7 +6,7 @@ My name is Rounak and I currently work at Barclays. Previously, I interned at [H
 
 In my free time, I enjoy playing table tennis, backpacking once in a while and Indo-Chinese food.
 
-You can find me on [Twitter](https://twitter.com/itsron143), [Github](https://github.com/itsron143),[LinkedIn](https://www.linkedin.com/in/itsron143/), and [Strava](https://www.strava.com/athletes/57025908), or reach me via vyas.rounak(at)outlook.com.
+You can find me on [Twitter](https://twitter.com/itsron143), [Github](https://github.com/itsron143), [LinkedIn](https://www.linkedin.com/in/itsron143/), and [Strava](https://www.strava.com/athletes/57025908), or reach me via vyas.rounak(at)outlook.com.
 
 ---
 
