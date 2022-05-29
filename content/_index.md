@@ -6,7 +6,7 @@ My name is Rounak and I currently work at [Skit.ai](https://skit.ai) as a Softwa
 
 In my free time, I enjoy playing table tennis, backpacking once in a while and Indo-Chinese food.
 
-You can find me on [Twitter](https://twitter.com/itsron143), [Github](https://github.com/itsron143),[LinkedIn](https://www.linkedin.com/in/itsron143/), and [Strava](https://www.strava.com/athletes/57025908), or reach me via vyas(dot)rounak(at)outlook.com.
+You can find me on [Twitter](https://twitter.com/itsron143), [Github](https://github.com/itsron143), [LinkedIn](https://www.linkedin.com/in/itsron143/), and [Strava](https://www.strava.com/athletes/57025908), or reach me via vyas(dot)rounak(at)outlook.com.
 
 ---
 
