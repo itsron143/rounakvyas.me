@@ -1,12 +1,12 @@
 ## Howdy.
 
-My name is Rounak and I currently work at [Skit.ai](https://skit.ai) as a Software Engineer. Previously, I have worked at [Barclays](https://home.barclays/), [Harvard Medical School](https://cetbwh.org), [Thomson Reuters](https://www.thomsonreuters.com/en.html) and [OpenGenus Foundation](https://www.opengenus.org/). My primary interests are backend development, building cli tools and deep learning.
+My name is Rounak and I am currently studying MSc Computer Science at [Vrije Universiteit Amsterdam](https://vu.nl/en) and [Universiteit van Amsterdam](https://www.uva.nl/en) (Joint Degree) under the [VU Fellowship Program](https://vu.nl/en/education/more-about/scholarships-for-international-masters-students). Previously, I have worked at [Skit.ai](https://skit.ai), [Barclays](https://home.barclays/), [Harvard Medical School](https://cetbwh.org) and [Thomson Reuters](https://www.thomsonreuters.com/en.html). My primary interests are backend development, building cli tools and deep learning.
 
 ---
 
 In my free time, I enjoy playing table tennis, backpacking once in a while and Indo-Chinese food.
 
-You can find me on [Twitter](https://twitter.com/itsron143), [Github](https://github.com/itsron143), [LinkedIn](https://www.linkedin.com/in/itsron143/), and [Strava](https://www.strava.com/athletes/57025908), or reach me via vyas(dot)rounak(at)outlook.com.
+You can find me on [Twitter](https://twitter.com/itsron143), [Github](https://github.com/itsron143), [LinkedIn](https://www.linkedin.com/in/itsron143/), and [Strava](https://www.strava.com/athletes/57025908), or reach me via itsron143(at)gmail.com.
 
 ---
 
