@@ -1,3 +1,96 @@
   <!-- A partial to be overwritten by the user.
   Simply place a custom_body.html into
   your local /layouts/partials-directory -->
+<body>
+  <style>
+    @font-face {
+      font-family: 'GentiumBookBasic-Regular';
+      font-weight: 400;
+      src: url('../fonts/GentiumBookBasic-Regular.ttf');
+    }
+
+    body {
+      background-color: rgb(255, 255, 255);
+      font-size: 26px;
+      font-size: 1.7rem;
+      word-break: break-word;
+      margin: auto;
+      padding: 10px;
+      max-width: 720px;
+      text-align: left;
+      font-family: 'GentiumBookBasic-Regular', monospace;
+    }
+
+    p {
+      line-height: 1.5em;
+      font-size: 1.7rem;
+      font-family: 'GentiumBookBasic-Regular', monospace;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      margin: 0.5em 0;
+      font-family: 'GentiumBookBasic-Regular', sans-serif;
+      color: #002664;
+    }
+
+    iframe {
+      margin: 0 auto;
+      display: block;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    blockquote {
+      margin-left: 1em;
+      margin-right: 1em;
+
+      @media (min-width: 520px) {
+        margin-left: 2em;
+        margin-right: 2em;
+      }
+  }
+
+    figure {
+      margin: 0;
+    }
+
+    ul {
+      padding: 0;
+      list-style: square;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0044b2;
+      border-bottom: 2px solid transparent;
+      
+    }
+
+
+    a[href^="/"], a[href^="/"] {
+          /* internal relative link */
+          color:black;
+    }
+    
+
+    a[href="{{ .Permalink }}"], a[href^="{{ .Name }}"] .active {
+      font-weight: bold;
+      color: #0044b2;
+    }
+
+
+    a:hover {
+      color: rgb(0, 0, 255);
+    }
+
+    footer {
+      padding: 25px;
+      text-align: center;
+    }
+
+    ul.blog-posts li a:visited {
+      color: rgb(126, 125, 125);
+    }
+
+  </style>
+</body>

@@ -16,7 +16,7 @@
   body {
     font-size: 17px;
     font-size: 1.6rem;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'GentiumBookBasic-Regular', monospace;
     word-break: break-word;
     margin: auto;
     padding: 10px;
@@ -27,10 +27,11 @@
   p {
     line-height: 1.5em;
     font-size: 1.6rem;
+    font-family: 'GentiumBookBasic-Regular', monospace;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'GentiumBookBasic-Regular', sans-serif;
     margin: 0.5em 0;
   }
 
@@ -73,7 +74,7 @@
   }
   
 
-  a[href="{{ .URL }}"], a[href^="{{ .Name }}"] .active {
+  a[href="{{ .Permalink }}"], a[href^="{{ .Name }}"] .active {
     font-weight: bold;
   }
 
